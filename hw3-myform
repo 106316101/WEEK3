@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<style>
+* {
+  box-sizing: border-box;
+}
+label 
+{
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=text], select,textarea
+{
+  <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea 
+{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label
+{
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=submit]
+{
+  width: 100%;
+  background-color:slategrey;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover
+{
+  background-color:SteelBlue;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) 
+{
+  .col-25, .col-75, input[type=submit] 
+  {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+<head>
+<title>My form</title>
+</head>
+<body style="background-color:lightblue;">
+<h1 style="color:MidnightBlue;text-align:center;font-size:150%;font-family:Microsoft JhengHei;">HEMATOLOGY/ONCOLOGY PATIENT REFERRAL FORM</h1>
+<div>
+<label for="patientif" style="color:black;font-size:120%;font-family:Microsoft JhengHei;"><strong>PATIENT INFORMATION</strong></label>
+<div class="container">
+  <form id="orderForm1"action="http://203.64.84.113/x/RQ_RS.aspx" method="post"  name="form1" >
+  <div class="row">
+    <div class="col-25">
+      <label for="pname" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>Name</strong></label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="pname" name="name" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="pid" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>PERSION ID</strong></label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="pid" name="PERSION ID" placeholder="Your id">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="gender" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>GENDER</strong></label>
+    </div>
+    <div class="col-75">
+      <input type="radio" id=gender name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br><br>
+    </div>
+  </div>
+  <label for="Requested" style="color:black;font-size:140%;font-family:Microsoft JhengHei;"><strong>Requested Service</strong></label>
+  <div class="row">
+    <div class="col-25">
+      <label for="physician" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>Specific Physician</strong></label>
+    </div>
+    <div class="col-75">
+      
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="service-o" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>ONCOLOGY</strong></label>
+    </div>
+    <div class="col-75">
+    <select name="Ooncology" size="4" multiple>
+  <option value="Breast">Breast</option>
+  <option value="Adjuvant">Adjuvant</option>
+  <option value="Lung">Lung</option>
+  <option value="Metastatic">Metastatic</option>
+  <option value="Colon">Colon</option>
+  <option value="Other">Other</option>
+</select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="service-H" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>HEMATOLOGY</strong></label>
+    </div>
+    <div class="col-75">
+      <select name="Hematology" size="4" multiple>
+  <option value="Lymphoma">Lymphoma</option>
+  <option value="Leukemia">Leukemia</option>
+  <option value="Myeloma">Myeloma</option>
+  <option value="BenignHematology">Benign Hematology</option>
+  <option value="Other">Other</option>
+</select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="available" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>Please include the following,if available</strong></label>
+    </div>
+    <div class="col-75">
+      <select id="available" name="Please include the following,ifavailable">
+        <option value="Blood work">Blood work</option>
+        <option value="Pathology results">Pathology results</option>
+        <option value="X-ray">X-ray</option>
+         <option value="CT/MRI/ultrasound">CT/MRI/ultrasound</option>
+        <option value="Bone scan">Bone scan</option>
+        <option value="Mammograms">Mammograms</option>
+        <option value="Consult Notes">Consult Notes</option>
+        <option value="Tumor Markers">Tumor Markers</option>
+   </div>
+   </div>
+   </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+  </div>
+</body>
+</html>
+
