@@ -75,18 +75,18 @@ input[type=submit]:hover
   <form id="orderForm1"action="http://203.64.84.113/x/RQ_RS.aspx" method="post"  name="form1" >
   <div class="row">
     <div class="col-25">
-      <label for="pname" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>Name</strong></label>
+      <label for="pname" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>NAME</strong></label>
     </div>
     <div class="col-75">
-      <input type="text" id="pname" name="name" placeholder="Your name..">
+      <input type="text" id="pname" name="Name" placeholder="Your name..">
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="pid" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>PERSION ID</strong></label>
+      <label for="pid" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>PERSON ID</strong></label>
     </div>
     <div class="col-75">
-      <input type="text" id="pid" name="PERSION ID" placeholder="Your id">
+      <input type="text" id="pid" name="Person ID" placeholder="Your id">
     </div>
   </div>
   <div class="row">
@@ -94,18 +94,92 @@ input[type=submit]:hover
       <label for="gender" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>GENDER</strong></label>
     </div>
     <div class="col-75">
-      <input type="radio" id=gender name="gender" value="male" checked> Male<br>
-  <input type="radio" name="gender" value="female"> Female<br>
-  <input type="radio" name="gender" value="other"> Other<br><br>
+      <input type="radio" id=gender name="Gender" value="male" checked> Male<br>
+  <input type="radio" name="Gender" value="female"> Female<br>
+  <input type="radio" name="Gender" value="other"> Other<br><br>
+    </div>
+  </div
+     <div class="row">
+    <div class="col-25">
+      <label for="pbirth" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>PATIENT BIRTHDAY</strong></label>
+    </div>
+    <div class="col-75">
+      <input type="date"  id="pbirth" name="Patient birthday">
+    </div>
+    </div>
+     <div class="row">
+    <div class="col-25">
+      <label for="Paddress" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>PATIENT ADDRESS</strong></label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Paddress" name="Patient Address" placeholder="Your address">
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-25">
+      <label for="Pphone" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>PATIENT PHONE(Cell)</strong></label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Pphone" name="Patient Phone" placeholder="Your Phone(Cell)">
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-25">
+      <label for="Phphone" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>PATIENT HOME PHONE</strong></label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Phphone" name="Patient Home Phone" placeholder="Your Home Phone">
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-25">
+      <label for="Pwphone" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>PATIENT WORK PHONE</strong></label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Pwphone" name="Patient Work Phone" placeholder="Your Work Phone">
+    </div>
+  </div>
+    div class="row">
+    <div class="col-25">
+      <label for="PAlternate" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>ALTERNATE CONTACT NAME</strong></label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="PAlternate" name="Alternate Contact Name" placeholder="Your alternate contact name">
+    </div>
+  </div>
+  div class="row">
+    <div class="col-25">
+      <label for="PArelationship" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>P&A RELATIONSHIP</strong></label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="PArelationship" name="Patient&Alternate Relationship">
     </div>
   </div>
   <label for="Requested" style="color:black;font-size:140%;font-family:Microsoft JhengHei;"><strong>Requested Service</strong></label>
   <div class="row">
     <div class="col-25">
-      <label for="physician" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>Specific Physician</strong></label>
+      <label for="physician" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>Specific Physician?</strong></label>
     </div>
     <div class="col-75">
-      
+      <select id="physician" name="Specific Physician?">
+        <option value="First available">First available</option>
+        <option value="Yes">Yes</option>
+         </select>
+       </div>
+  </div>
+     <div class="row">
+    <div class="col-25">
+    <label for="ifyes" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>If yes to choice physician</strong></label>
+    </div>
+       <select id="ifyes" name="If yes to choice physician">
+        <option value="DR.Paula">DR.Paula</option>
+        <option value="DR.Vivian">DR.Vivian</option>
+         <option value="DR.Sarah">DR.Sarah</option>
+        <option value="DR.Danny">DR.Danny</option>
+        <option value="DR.Daryl">DR.Daryl</option>
+        <option value="DR.Jeff">DR.Jeff</option>
+        <option value="DR.Joanne">DR.Joanne</option>
+        </select>
     </div>
   </div>
   <div class="row">
@@ -113,12 +187,12 @@ input[type=submit]:hover
       <label for="service-o" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>ONCOLOGY (可複選)</strong></label>
     </div>
     <div class="col-75">
-  <input type="checkbox" id="service-o" name="Ooncology" value="Breast">Breast<br>
-  <input type="checkbox" id="service-o" name="Ooncology" value="Adjuvant">Adjuvant<br>
-  <input type="checkbox" id="service-o" name="Ooncology" value="Lung">Lung<br>
-  <input type="checkbox" id="service-o" name="Ooncology" value="Metastatic">Metastatic<br>
-  <input type="checkbox" id="service-o" name="Ooncology" value="Colon">Colon<br>
- <input type="checkbox" id="service-o" name="Ooncology" value="Other">Other<br>
+  <input type="checkbox" id="service-o" name="Ooncology-1" value="Breast">Breast<br>
+  <input type="checkbox" id="service-o" name="Ooncology-2" value="Adjuvant">Adjuvant<br>
+  <input type="checkbox" id="service-o" name="Ooncology-3" value="Lung">Lung<br>
+  <input type="checkbox" id="service-o" name="Ooncology-4" value="Metastatic">Metastatic<br>
+  <input type="checkbox" id="service-o" name="Ooncology-5" value="Colon">Colon<br>
+ <input type="checkbox" id="service-o" name="Ooncology-7" value="Other">Other<br>
     </div>
   </div>
   <div class="row">
@@ -126,11 +200,11 @@ input[type=submit]:hover
       <label for="service-H" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>HEMATOLOGY (可複選)</strong></label>
     </div>
     <div class="col-75">
-  <input type="checkbox" id="service-H" name="Hematology" value="Lymphoma">Lymphoma<br>
-  <input type="checkbox" id="service-H" name="Hematology" value="Leukemia">Leukemia<br>
-  <input type="checkbox" id="service-H" name="Hematology" value="Myeloma">Myeloma<br>
-  <input type="checkbox" id="service-H" name="Hematology" value="BenignHematology">Benign Hematology<br>
- <input type="checkbox" id="service-H" name="Hematology" value="Other">Other<br>
+  <input type="checkbox" id="service-H" name="Hematology-1" value="Lymphoma">Lymphoma<br>
+  <input type="checkbox" id="service-H" name="Hematology-2" value="Leukemia">Leukemia<br>
+  <input type="checkbox" id="service-H" name="Hematology-3" value="Myeloma">Myeloma<br>
+  <input type="checkbox" id="service-H" name="Hematology-4" value="BenignHematology">Benign Hematology<br>
+ <input type="checkbox" id="service-H" name="Hematology-5" value="Other">Other<br>
     </div>
   </div>
   <div class="row">
