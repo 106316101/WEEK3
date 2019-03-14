@@ -39,13 +39,13 @@ input[type=submit]:hover
 }
 
 .col-25 {
-  float: left;
+  float:top;
   width: 25%;
   margin-top: 6px;
 }
 
 .col-75 {
-  float: left;
+  float:top;
   width: 75%;
   margin-top: 6px;
 }
@@ -154,10 +154,16 @@ input[type=submit]:hover
    </div>
    </div>
    </div>
-  <div class="row">
+     <div class="row">
     <div class="col-25">
-    <input type="submit" value="Submit">
+      <label for="subject">Subject</label>
     </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
   </div>
   </form>
   </div>
