@@ -110,29 +110,27 @@ input[type=submit]:hover
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="service-o" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>ONCOLOGY</strong></label>
+      <label for="service-o" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>ONCOLOGY (可複選)</strong></label>
     </div>
     <div class="col-75">
-    <select name="Ooncology" size="4" multiple>
-  <option value="Breast">Breast</option>
-  <option value="Adjuvant">Adjuvant</option>
-  <option value="Lung">Lung</option>
-  <option value="Metastatic">Metastatic</option>
-  <option value="Colon">Colon</option>
-  <option value="Other">Other</option>
-</select>
+  <input type="checkbox" id="service-o" name="Ooncology" value="Breast">Breast<br>
+  <input type="checkbox" id="service-o" name="Ooncology" value="Adjuvant">Adjuvant<br>
+  <input type="checkbox" id="service-o" name="Ooncology" value="Lung">Lung<br>
+  <input type="checkbox" id="service-o" name="Ooncology" value="Metastatic">Metastatic<br>
+  <input type="checkbox" id="service-o" name="Ooncology" value="Colon">Colon<br>
+ <input type="checkbox" id="service-o" name="Ooncology" value="Other">Other<br>
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="service-H" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>HEMATOLOGY</strong></label>
+      <label for="service-H" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>HEMATOLOGY (可複選)</strong></label>
     </div>
     <div class="col-75">
-  <input type="checkbox" id="service-H" name="Hematology" value="Lymphoma" style="font-family:Microsoft JhengHei">Lymphoma<br>
-  <input type="checkbox" id="service-H" name="Hematology" value="Leukemia" style="font-family:Microsoft JhengHei">Leukemia<br>
-  <input type="checkbox" id="service-H" name="Hematology" value="Myeloma" style="font-family:Microsoft JhengHei">Myeloma<br>
-  <input type="checkbox" id="service-H" name="Hematology" value="BenignHematology" style="font-family:Microsoft JhengHei">Benign Hematology<br>
- <input type="checkbox" id="service-H" name="Hematology" value="Other" style="font-family:Microsoft JhengHei">Other<br>
+  <input type="checkbox" id="service-H" name="Hematology" value="Lymphoma">Lymphoma<br>
+  <input type="checkbox" id="service-H" name="Hematology" value="Leukemia">Leukemia<br>
+  <input type="checkbox" id="service-H" name="Hematology" value="Myeloma">Myeloma<br>
+  <input type="checkbox" id="service-H" name="Hematology" value="BenignHematology">Benign Hematology<br>
+ <input type="checkbox" id="service-H" name="Hematology" value="Other">Other<br>
     </div>
   </div>
   <div class="row">
@@ -153,7 +151,7 @@ input[type=submit]:hover
    </div>
     <div class="row">
     <div class="col-25">
-      <label for="reasion"><stroung>Reasion for refferal</stroung></label>
+      <label for="reasion" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><stroung>Reasion for refferal</stroung></label>
     </div>
     <div class="col-75">
       <textarea id="reasion" name="Reasion for refferal" placeholder="Write you reasion" style="height:100px"></textarea>
