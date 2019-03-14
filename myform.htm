@@ -19,7 +19,7 @@ label
 }
 input[type=submit]
 {
-  width: 100%;
+  width: 50%;
   background-color:slategrey;
   color: white;
   padding: 14px 20px;
@@ -27,6 +27,7 @@ input[type=submit]
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  float:left;
 }
 input[type=submit]:hover
 {
@@ -161,7 +162,7 @@ input[type=submit]:hover
       <label for="physician" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>Specific Physician?</strong></label>
     </div>
     <div class="col-75">
-      <select id="physician" name="Specific Physician?" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;">
+      <select id="physician" name="Specific Physician?">
         <option value="First available">First available</option>
         <option value="Yes">Yes</option>
          </select>
@@ -171,7 +172,8 @@ input[type=submit]:hover
     <div class="col-25">
     <label for="ifyes" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>If yes to choice physician</strong></label>
     </div>
-       <select id="ifyes" name="If yes to choice physician" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;">
+       <div class="col-75">
+       <select id="ifyes" name="If yes to choice physician" >
         <option value="DR.Paula">DR.Paula</option>
         <option value="DR.Vivian">DR.Vivian</option>
          <option value="DR.Sarah">DR.Sarah</option>
@@ -180,8 +182,8 @@ input[type=submit]:hover
         <option value="DR.Jeff">DR.Jeff</option>
         <option value="DR.Joanne">DR.Joanne</option>
         </select>
+          </div>
     </div>
-  </div>
   <div class="row">
     <div class="col-25">
       <label for="service-o" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>ONCOLOGY (可複選)</strong></label>
