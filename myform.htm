@@ -59,7 +59,7 @@ input[type=submit]:hover
 {
   .col-25, .col-75, input[type=submit] 
   {
-    width: 100%;
+    width: 50%;
     margin-top: 0;
   }
 }
@@ -128,13 +128,11 @@ input[type=submit]:hover
       <label for="service-H" style="color:MidnightBlue;font-size:100%;font-family:Microsoft JhengHei;"><strong>HEMATOLOGY</strong></label>
     </div>
     <div class="col-75">
-      <select name="Hematology" size="4" multiple>
-  <option value="Lymphoma">Lymphoma</option>
-  <option value="Leukemia">Leukemia</option>
-  <option value="Myeloma">Myeloma</option>
-  <option value="BenignHematology">Benign Hematology</option>
-  <option value="Other">Other</option>
-</select>
+  <input type="checkbox" id="service-H" name="Hematology" value="Lymphoma" style="font-family:Microsoft JhengHei">Lymphoma<br>
+  <input type="checkbox" id="service-H" name="Hematology" value="Leukemia" style="font-family:Microsoft JhengHei">Leukemia<br>
+  <input type="checkbox" id="service-H" name="Hematology" value="Myeloma" style="font-family:Microsoft JhengHei">Myeloma<br>
+  <input type="checkbox" id="service-H" name="Hematology" value="BenignHematology" style="font-family:Microsoft JhengHei">Benign Hematology<br>
+ <input type="checkbox" id="service-H" name="Hematology" value="Other" style="font-family:Microsoft JhengHei">Other<br>
     </div>
   </div>
   <div class="row">
@@ -155,10 +153,10 @@ input[type=submit]:hover
    </div>
     <div class="row">
     <div class="col-25">
-      <label for="subject"><stroung>Subject</stroung></label>
+      <label for="reasion"><stroung>Reasion for refferal</stroung></label>
     </div>
     <div class="col-75">
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <textarea id="reasion" name="Reasion for refferal" placeholder="Write you reasion" style="height:100px"></textarea>
     </div>
   </div>
    </div>
